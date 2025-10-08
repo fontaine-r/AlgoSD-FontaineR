@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <time.h>
+#include "fibo.h"
+
 void main(){
     int x = 45;
     printf("Numéro testé : %i \n ", x);
