@@ -5,9 +5,9 @@
 
 int linear_search(int *arr, int n, int target)
 {
-    // linear search, return index of target
-    // return -1 if not found
-
+    for (int i = 0 ; i<n ; i++){
+        if ( arr[i] == target) return i;
+    }
     return -1;
 }
 
