@@ -15,10 +15,10 @@ void selection_sort(int *arr, int n)
 
 void insertion_sort(int *arr, int n)
 {
-    for (int i = 0 ; i<n ; i++){
+    for (int i = 1 ; i<n ; i++){
         int key = arr[i];
         int j = i-1;
-        while (j>0){
+        while (j>=0 && arr[j]>key){
             arr[j+1] = arr[j];
             j-=1;
         }
@@ -28,7 +28,13 @@ void insertion_sort(int *arr, int n)
 
 void bubble_sort(int *arr, int n)
 {
-    // bubble sort iterative
+    for(int j = 0 ; j<n ; j++){
+        for (int i = 1 ; i<n ; i++){
+            if(arr[i-1]>arr[i]){
+                swap_int(arr[i-1],arr[i]);
+            }
+        }
+    }
 }
 
 void merge(int *arr, int *tmp, int l, int m, int r)
