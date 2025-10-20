@@ -39,7 +39,7 @@ void bubble_sort(int *arr, int n)
 
 void merge(int *arr, int *tmp, int l, int m, int r)
 {
-    // merge function
+    
 }
 
 void mergesort_rec(int *arr, int *tmp, int l, int r)
