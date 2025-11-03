@@ -3,8 +3,6 @@
 #include <time.h>
 #include "search.h"
 #include "utils.h"
-//test
-
 
 int main(void){
     int sizeofarray = 10000000;
